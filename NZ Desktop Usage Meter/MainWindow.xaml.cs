@@ -78,5 +78,26 @@ namespace NZ_Desktop_Usage_Meter
                 Timer.Start();
             }
         }
+
+        /// <summary>
+        /// Handles the Click event of the Menu Item Settings.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        private void MenuItemSeettings_Click(object sender, RoutedEventArgs e)
+        {
+            Window Settings = new Settings();
+            Settings.ShowDialog();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the Menu Item Exit.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        private void MenuItemExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

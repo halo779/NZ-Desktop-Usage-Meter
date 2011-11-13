@@ -72,8 +72,8 @@ namespace MeterBase
         /// </value>
         public string Username
         {
-            get { return Meter.Username; }
-            set { Meter.Username = value; }
+            get { return MeterBase.DecodeFrom64(Meter.Username); }
+            set { Meter.Username = MeterBase.EncodeTo64(value); }
         }
         /// <summary>
         /// Gets or sets the password.
@@ -83,8 +83,8 @@ namespace MeterBase
         /// </value>
         public string Password
         {
-            get { return Meter.Password; }
-            set { Meter.Password = value; }
+            get { return MeterBase.DecodeFrom64(Meter.Password); }
+            set { Meter.Password = MeterBase.EncodeTo64(value); }
         }
         /// <summary>
         /// Gets or sets the last error.

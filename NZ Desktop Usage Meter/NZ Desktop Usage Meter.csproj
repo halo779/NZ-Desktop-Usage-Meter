@@ -40,6 +40,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
     </Reference>
+    <Reference Include="NumericUpDown">
+      <HintPath>..\NumericUpDown.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -61,6 +64,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="RunChecks.cs" />
+    <Compile Include="UI\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\ToolTip.xaml.cs">
       <DependentUpon>ToolTip.xaml</DependentUpon>
     </Compile>
@@ -76,6 +82,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UI\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\ToolTip.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

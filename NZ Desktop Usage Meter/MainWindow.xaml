@@ -11,10 +11,17 @@
         <tb:TaskbarIcon
             Name="NZTASKBAR"
            ToolTipText="test"
-           IconSource="Icons/vf512x512trans.ico">
+           IconSource="Icons/vf512x512trans.ico"
+            MenuActivation="RightClick">
         <tb:TaskbarIcon.TrayToolTip>
             <ui:ToolTip/>
         </tb:TaskbarIcon.TrayToolTip>
+        <tb:TaskbarIcon.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Settings" Click="MenuItemSeettings_Click"></MenuItem>
+                <MenuItem Header="Exit" Click="MenuItemExit_Click"></MenuItem>
+            </ContextMenu>
+        </tb:TaskbarIcon.ContextMenu>
     </tb:TaskbarIcon>
 
 </Window>
